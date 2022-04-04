@@ -1,0 +1,8 @@
+<ng-template cxOutletRef="Summary" [cxOutletPos]="OutletPosition.BEFORE">
+  <h1 *ngIf="product$ | async as product" style="color: blue">
+    {{ product.name }}
+  </h1>
+</ng-template>
+ <ng-template cxOutletRef="PDP.PRICE" let-model>
+  <h2>Hot new price: {{ model?.product.price.formattedValue }}</h2>
+ </ng-template>

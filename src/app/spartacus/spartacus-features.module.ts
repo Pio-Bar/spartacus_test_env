@@ -13,6 +13,7 @@ import { CartSavedCartFeatureModule } from './features/cart/cart-saved-cart-feat
 import { CartQuickOrderFeatureModule } from './features/cart/cart-quick-order-feature.module';
 import { CartImportExportFeatureModule } from './features/cart/cart-import-export-feature.module';
 import { AsmFeatureModule } from './features/asm/asm-feature.module';
+import { MyOutletModule } from './features/my-outlet/my-outlet.module';
 
 @NgModule({
   declarations: [],
@@ -92,6 +93,10 @@ import { AsmFeatureModule } from './features/asm/asm-feature.module';
     CartQuickOrderFeatureModule,
     CartImportExportFeatureModule,
     AsmFeatureModule,
-  ]
+
+    // my custom modules
+    MyOutletModule
+  ],
+  exports: [MyOutletModule]
 })
 export class SpartacusFeaturesModule { }

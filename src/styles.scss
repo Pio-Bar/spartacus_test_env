@@ -1,4 +1,17 @@
 /* You can add global styles to this file, and also import other style files */
 
 $styleVersion: 4.3;
-@import '~@spartacus/styles/index';
+
+// do not import styles for given components
+$skipComponentStyles: (cx-mini-cart);
+
+// import styles library
+@import "~@spartacus/styles/index";
+
+// changing global css variables
+:root {
+  --cx-color-primary: #841c26;
+  --cx-color-secondary: #7de2d1;
+  --cx-color-dark: #2191fb;
+}
+
