@@ -1,0 +1,7 @@
+<div *ngIf="activeCart$ | async as activeCart">
+  <ul>
+    <li *ngFor="let entry of activeCart.entries">
+      <a [routerLink]="entry.product?.url">{{ entry.product?.name }}</a>
+    </li>
+  </ul>
+</div>

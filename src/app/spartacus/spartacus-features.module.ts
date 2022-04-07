@@ -14,6 +14,7 @@ import { CartQuickOrderFeatureModule } from './features/cart/cart-quick-order-fe
 import { CartImportExportFeatureModule } from './features/cart/cart-import-export-feature.module';
 import { AsmFeatureModule } from './features/asm/asm-feature.module';
 import { MyOutletModule } from './features/my-outlet/my-outlet.module';
+import { MySearchModule } from './features/my-search/my-search.module';
 
 @NgModule({
   declarations: [],
@@ -95,7 +96,8 @@ import { MyOutletModule } from './features/my-outlet/my-outlet.module';
     AsmFeatureModule,
 
     // my custom modules
-    MyOutletModule
+    MyOutletModule,
+    MySearchModule
   ],
   exports: [MyOutletModule]
 })

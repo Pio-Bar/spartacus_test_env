@@ -1,5 +1,4 @@
 /* You can add global styles to this file, and also import other style files */
-
 $styleVersion: 4.3;
 
 // do not import styles for given components
@@ -10,8 +9,30 @@ $skipComponentStyles: (cx-mini-cart);
 
 // changing global css variables
 :root {
-  --cx-color-primary: #841c26;
-  --cx-color-secondary: #7de2d1;
-  --cx-color-dark: #2191fb;
+  --cx-color-primary: #f0d90b;
+  --cx-color-secondary: #aaa9a9;
+  --cx-color-dark: #000000;
 }
 
+// Extending component styles
+cx-banner {
+  @extend %cx-banner !optional;
+  img {
+    border-radius: 5%;
+  }
+}
+
+[position="MiniCart"] {
+  position: relative;
+}
+
+app-mini-cart-dropdown {
+ position: absolute;
+ top: 25px;
+ left: 0;
+ display: none;
+}
+
+[position="MiniCart"]:hover app-mini-cart-dropdown {
+  display: block
+}

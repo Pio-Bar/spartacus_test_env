@@ -40,7 +40,6 @@
               "src/styles/spartacus/user.scss",
               "src/styles/spartacus/storefinder.scss",
               "src/styles/spartacus/product.scss",
-              "src/styles/spartacus/order.scss",
               "src/styles/spartacus/checkout.scss",
               "src/styles/spartacus/cart.scss"
             ],

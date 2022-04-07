@@ -1,0 +1,3 @@
+<ng-container *ngIf="product$ | async as product">
+  <p>{{ product.availableForPickup ? 'Available for pickup!' : 'Order only!' }}</p>
+</ng-container>
