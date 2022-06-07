@@ -6,16 +6,16 @@ import { Observable } from 'rxjs';
 @Component({
   selector: 'app-my-outlet',
   templateUrl: './my-outlet.component.html',
-  styleUrls: ['./my-outlet.component.scss']
+  styleUrls: ['./my-outlet.component.scss'],
 })
 export class MyOutletComponent implements OnInit {
-
-  constructor(private currentProductService: CurrentProductService) { }
+  constructor(private currentProductService: CurrentProductService) {}
 
   ngOnInit(): void {
-    console.log(this.product$)
+    console.log(this.product$);
   }
-  product$: Observable<Product | null> = this.currentProductService.getProduct();
+  product$: Observable<Product | null> =
+    this.currentProductService.getProduct();
 
-  OutletPosition = OutletPosition
+  OutletPosition = OutletPosition;
 }

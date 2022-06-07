@@ -1,6 +1,58 @@
 import { NgModule } from '@angular/core';
-import { AnonymousConsentsModule, AuthModule, CartModule, CartOccModule, CostCenterOccModule, ExternalRoutesModule, OrderOccModule, ProductModule, ProductOccModule, UserOccTransitional_4_2_Module, UserTransitional_4_2_Module } from "@spartacus/core";
-import { AddressBookModule, AnonymousConsentManagementBannerModule, AnonymousConsentsDialogModule, BannerCarouselModule, BannerModule, BreadcrumbModule, CartComponentModule, CartPageEventModule, CategoryNavigationModule, CmsParagraphModule, ConsentManagementModule, FooterNavigationModule, HamburgerMenuModule, HomePageEventModule, LinkModule, LoginRouteModule, LogoutModule, MyCouponsModule, MyInterestsModule, NavigationEventModule, NavigationModule, NotificationPreferenceModule, PaymentMethodsModule, ProductCarouselModule, ProductDetailsPageModule, ProductFacetNavigationModule, ProductImagesModule, ProductIntroModule, ProductListingPageModule, ProductListModule, ProductPageEventModule, ProductReferencesModule, ProductSummaryModule, ProductTabsModule, SearchBoxModule, SiteContextSelectorModule, StockNotificationModule, TabParagraphContainerModule, WishListModule } from "@spartacus/storefront";
+import {
+  AnonymousConsentsModule,
+  AuthModule,
+  CartModule,
+  CartOccModule,
+  CostCenterOccModule,
+  ExternalRoutesModule,
+  OrderOccModule,
+  ProductModule,
+  ProductOccModule,
+  UserOccTransitional_4_2_Module,
+  UserTransitional_4_2_Module,
+} from '@spartacus/core';
+import {
+  AddressBookModule,
+  AnonymousConsentManagementBannerModule,
+  AnonymousConsentsDialogModule,
+  BannerCarouselModule,
+  BannerModule,
+  BreadcrumbModule,
+  CartComponentModule,
+  CartPageEventModule,
+  CategoryNavigationModule,
+  CmsParagraphModule,
+  ConsentManagementModule,
+  FooterNavigationModule,
+  HamburgerMenuModule,
+  HomePageEventModule,
+  LinkModule,
+  LoginRouteModule,
+  LogoutModule,
+  MyCouponsModule,
+  MyInterestsModule,
+  NavigationEventModule,
+  NavigationModule,
+  NotificationPreferenceModule,
+  PaymentMethodsModule,
+  ProductCarouselModule,
+  ProductDetailsPageModule,
+  ProductFacetNavigationModule,
+  ProductImagesModule,
+  ProductIntroModule,
+  ProductListingPageModule,
+  ProductListModule,
+  ProductPageEventModule,
+  ProductReferencesModule,
+  ProductSummaryModule,
+  ProductTabsModule,
+  SearchBoxModule,
+  SiteContextSelectorModule,
+  StockNotificationModule,
+  TabParagraphContainerModule,
+  WishListModule,
+} from '@spartacus/storefront';
 import { UserFeatureModule } from './features/user/user-feature.module';
 import { PersonalizationFeatureModule } from './features/tracking/personalization-feature.module';
 import { StoreFinderFeatureModule } from './features/storefinder/store-finder-feature.module';
@@ -97,8 +149,8 @@ import { MySearchModule } from './features/my-search/my-search.module';
 
     // my custom modules
     MyOutletModule,
-    MySearchModule
+    MySearchModule,
   ],
-  exports: [MyOutletModule]
+  exports: [MyOutletModule],
 })
-export class SpartacusFeaturesModule { }
+export class SpartacusFeaturesModule {}

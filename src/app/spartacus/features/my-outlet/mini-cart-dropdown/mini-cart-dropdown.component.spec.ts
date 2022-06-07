@@ -8,9 +8,8 @@ describe('MiniCartDropdownComponent', () => {
 
   beforeEach(async () => {
     await TestBed.configureTestingModule({
-      declarations: [ MiniCartDropdownComponent ]
-    })
-    .compileComponents();
+      declarations: [MiniCartDropdownComponent],
+    }).compileComponents();
   });
 
   beforeEach(() => {

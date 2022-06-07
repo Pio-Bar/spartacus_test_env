@@ -1,27 +1,34 @@
 import { NgModule } from '@angular/core';
-import { CmsConfig, I18nConfig, provideConfig } from "@spartacus/core";
-import { productVariantsTranslationChunksConfig, productVariantsTranslations } from "@spartacus/product/variants/assets";
-import { ProductVariantsRootModule, PRODUCT_VARIANTS_FEATURE } from "@spartacus/product/variants/root";
+import { CmsConfig, I18nConfig, provideConfig } from '@spartacus/core';
+import {
+  productVariantsTranslationChunksConfig,
+  productVariantsTranslations,
+} from '@spartacus/product/variants/assets';
+import {
+  ProductVariantsRootModule,
+  PRODUCT_VARIANTS_FEATURE,
+} from '@spartacus/product/variants/root';
 
 @NgModule({
   declarations: [],
-  imports: [
-    ProductVariantsRootModule
-  ],
-  providers: [provideConfig(<CmsConfig>{
-    featureModules: {
-      [PRODUCT_VARIANTS_FEATURE]: {
-        module: () =>
-          import('@spartacus/product/variants').then((m) => m.ProductVariantsModule),
+  imports: [ProductVariantsRootModule],
+  providers: [
+    provideConfig(<CmsConfig>{
+      featureModules: {
+        [PRODUCT_VARIANTS_FEATURE]: {
+          module: () =>
+            import('@spartacus/product/variants').then(
+              (m) => m.ProductVariantsModule
+            ),
+        },
       },
-    }
-  }),
-  provideConfig(<I18nConfig>{
-    i18n: {
-      resources: productVariantsTranslations,
-      chunks: productVariantsTranslationChunksConfig,
-    },
-  })
-  ]
+    }),
+    provideConfig(<I18nConfig>{
+      i18n: {
+        resources: productVariantsTranslations,
+        chunks: productVariantsTranslationChunksConfig,
+      },
+    }),
+  ],
 })
-export class ProductVariantsFeatureModule { }
+export class ProductVariantsFeatureModule {}

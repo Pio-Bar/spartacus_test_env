@@ -5,7 +5,7 @@ $styleVersion: 4.3;
 $skipComponentStyles: (cx-mini-cart);
 
 // import styles library
-@import "~@spartacus/styles/index";
+@import '~@spartacus/styles/index';
 
 // changing global css variables
 :root {
@@ -22,17 +22,17 @@ cx-banner {
   }
 }
 
-[position="MiniCart"] {
+[position='MiniCart'] {
   position: relative;
 }
 
 app-mini-cart-dropdown {
- position: absolute;
- top: 25px;
- left: 0;
- display: none;
+  position: absolute;
+  top: 25px;
+  left: 0;
+  display: none;
 }
 
-[position="MiniCart"]:hover app-mini-cart-dropdown {
-  display: block
+[position='MiniCart']:hover app-mini-cart-dropdown {
+  display: block;
 }

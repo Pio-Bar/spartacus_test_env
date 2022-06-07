@@ -8,9 +8,8 @@ describe('PickUpComponent', () => {
 
   beforeEach(async () => {
     await TestBed.configureTestingModule({
-      declarations: [ PickUpComponent ]
-    })
-    .compileComponents();
+      declarations: [PickUpComponent],
+    }).compileComponents();
   });
 
   beforeEach(() => {
