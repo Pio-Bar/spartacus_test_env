@@ -32,5 +32,5 @@ jobs:
       - name: setup
         run: yarn install --no-lockfile
         
-      - name: test
-        run: ng test
+      - name: test prettier
+        run: yarn prettier:check
